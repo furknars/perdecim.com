@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Üye Giriş</title>
+    <link rel="stylesheet" type="text/css" href="..\\css\uyelik.css">
+    <link rel="stylesheet" type="text/css" href="..\\css\styles.css">
+    <link rel="stylesheet" type="text/css" href="..\\css\kayitol.css">
+    <link rel="stylesheet" type="text/css" href="..\\css\giris.css">
+    <link rel="stylesheet" type="text/css" href="..\\css\animate.css">
+    <meta charset="utf-8">
+
+</head>
+<body class="boyut">
+     <br><br><br><br> 
+    <div  align="center" >
+        <img class="animated fadeInUp " src="..\\img\perdecim.png" border="0" >
+    
+        <br><br>
+    </div>
+
+    <div class="kapsam">
+        <div class="tercih">
+
+            <a class="uye" href="giris.html">Üye Girişi</a>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="yonetici" href="yoneticiGiris.html">Yönetici Girişi</a>
+            
+        </div>
+    <form class="uyeform" action="../php/islem.php" method="POST">
+        
+        <table border="5" width="300px">
+            <tr>
+                <td>
+                    <label>Kullanıcı Adı</label>
+                </td>
+                <td>
+                    <input type="text" name="kadi">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Şifre</label>
+                </td>
+                <td>
+                    <input type="password" name="sifre">
+                </td>
+            </tr>
+
+        </table>
+
+
+            <input class="uyesub" type="submit" name="uyegiris" value="Giriş">
+    </form>
+</div>
+
+
+</body>
+</html>

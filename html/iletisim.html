@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="..\css\kayitol.css">
+	<link rel="stylesheet" type="text/css" href="..\css\uyelik.css">
+	<link rel="stylesheet" type="text/css" href="..\css\styles.css">
+	<link rel="stylesheet" type="text/css" href="..\css\animate.css">
+	<script type="text/javascript" src="..\js\javascript.js"></script>
+	<script type="text/javascript" src="..\js\iletisimKontrol.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<meta charset="utf-8">
+	
+</head>
+<body bgcolor="white" >
+	
+	<a  class="gyap" href="giris.html">Giriş Yap</a>
+	<a href="uyeKayit.html" class="kol">Kayıt Ol</a>
+
+<div class="header">
+<br>
+	<div  align="center" >
+		<img class="animated fadeInUp" src="..\img\perdecim.png" border="0" >
+	
+		<br><br>
+	</div>
+	
+</div>
+
+<div class="cont1" >
+	
+<div class="spotlightmenu" align="center">
+	<ul>
+		<li><a href="../index.html"><span>Anasayfa</span></a></li>
+		<li><a href="uyelik.html"><span>Üyelik Detayları</span></a></li>
+		<li><a href="hakkinda.html"><span>Hakkında</span></a></li>
+		<li><a href="iletisim.html"><span>İletişim</span></a></li>
+		
+	</ul>
+
+</div>
+
+
+
+	<div class="baslik" >
+		
+		<h2>İletişim Formu</h2>
+
+	</div>
+<form action="../php/iletisim.php" method="post" onsubmit="return kontrol()" >
+	
+	<table class="table1" width="600px" >
+		<tr>
+			<td>
+				<label class="label">Email</label><br><br>
+			</td>
+			<td>
+				<input  type="text" name="email" id="email"> <br><br>
+			</td>
+
+		</tr>
+			<tr>
+			<td>
+				<label class="label">Telefon No</label><br><br>
+			</td>
+			<td>
+				<input type="text" name="telNo" id="tel" onkeypress="return isNumber(event)" maxlength="11"><br><br>
+			</td>
+
+		</tr>
+		<tr>
+			<td>
+				<label class="label">Konu</label><br><br>
+			</td>
+			<td>
+				<input type="text" name="konu" id="konu"><br><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label class="label">Açıklama</label><br><br>
+			</td>
+			<td>
+				<textarea name="message" rows="5" cols="40" id="aciklama"></textarea><br><br>
+			</td>
+		</tr>
+	</table>
+
+	<input type="submit" class="iltesimSub" name="iltesimSub" value="Mesaj Gönder" >
+</form>
+
+
+
+
+
+
+
+
+
+
+</div>
+<div align="center" class="footer">
+	<br>
+	<font size="3">@ARS</font>
+	<br>
+</div>

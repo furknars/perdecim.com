@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Üyelik Detayları</title>
+	
+	<link rel="stylesheet" type="text/css" href="..\\css\kayitol.css">
+	<link rel="stylesheet" type="text/css" href="..\\css\animate.css">
+	<link rel="stylesheet" type="text/css" href="..\\css\styles.css">
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="..\\js\kont.js"></script>
+	<script type="text/javascript" src="..\\js\javascript.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<script>
+function keydown(e) { // Enter tusuna basınca submit in aktif olmasını engelleyen fonksiyon
+        // Olay parametresini al (window.event eski IE için)
+        e = e || window.event;
+	// Basılan tuşun kodunu al.
+        var tus = e.keyCode || e.which;
+	// Tuş Enter ise
+        if (tus == 13) {
+		// Olayın varsayılan davranışına engel ol.
+            	e.preventDefault();
+		// Entere basıldığında yapılacak işi yap.
+            	entereBasildi(); 
+            	// Aşağıdaki başka işlemler var ve yapılmasını istemiyorsan ekle.
+            	return; 
+        }
+    }
+    function entereBasildi() {
+        console.log("Enter tuşuna basıldı.");
+    }
+</script>
+</head>
+
+
+<body bgcolor="white">
+	<a  class="gyap" href="giris.html">Giriş Yap</a>
+	<a href="uyeKayit.html" class="kol">Kayıt Ol</a>
+
+<div class="header" align="center"> 
+<br>
+	<div  align="center" >
+		<img class="animated fadeInUp " src="..\\img\perdecim.png" border="0" >
+	
+		<br><br>
+	</div>
+
+	
+</div>
+
+<div class="cont">
+	
+	<div class="spotlightmenu" align="center">
+		<ul>
+			<li><a href="../index.html"><span>Anasayfa        </span></a></li>
+			<li><a href="uyelik.html"><span>Üyelik Detayları</span></a></li>
+			<li><a href="hakkinda.html"><span>Hakkında </span></a></li>
+			<li><a href="iletisim.html"><span>İletişim</span></a></li>
+
+		</ul>
+		
+	</div>
+
+	<div class="baslik" >
+		
+		<h2>Kayıt Formu</h2>
+		<h2 class="baslik2">Kredi Kartı Bilgileri</h2>
+
+	</div>
+
+
+	
+		
+	<form action="..\php\uyeKayit.php" method="post" >
+	<table class="table1" width="800px" >
+		<tr>
+			<td>
+				<label class="label" >İsim</label>
+			</td>
+			<td>
+				*<input type="text" name="ad" id="ad" onkeydown="keydown(event)"> 
+			</td>
+
+			<td>
+				 <br><br><br>
+			</td>
+			<td>
+				<label class="label1">İsim Soyisim</label>
+			</td>
+			<td>
+				<input type="text" name="kkadsoyad" id="kkadsoyad" onkeydown="keydown(event)">
+			</td>
+			<td>
+				<br><br><br>
+			</td>
+			
+		</tr>
+		<tr>
+			<td>
+				<label class="label">Soyisim</label>
+			</td>
+			<td>
+				*<input type="text" name="soyad" id="soyad" onkeydown="keydown(event)">
+			</td>
+			<td>
+				 <br><br><br>
+			</td>
+			<td>
+				<label class="label1">Kart No</label>
+			</td>
+			<td>
+				<input onkeypress='return event.charCode >= 48 && event.charCode <= 57' type="text" maxlength="16" name="kkno" id="kkno" onkeydown="keydown(event)">
+			</td>
+			<td>
+				<br><br><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label class="label">Tc Kimlik</label>
+			</td>
+			<td>
+				*<input onkeypress='return event.charCode >= 48 && event.charCode <= 57' type="text" name="tc" id="tc" maxlength="11" onkeydown="keydown(event)">
+			</td>
+			<td>
+				 <br><br><br>
+			</td>
+			<td>
+				<label class="label1">Valid Thru</label>
+			</td>
+			<td >
+				<select id="ay" name="ay">
+					<script language="javascript" type="text/javascript"> 
+
+						for(var d=1;d<=31;d++)
+						{
+    						document.write("<option>"+d+"</option>");
+						}
+					</script>
+				</select>
+
+				
+				<select id="yil" class="yil" name="yil">
+  						<script language="javascript" type="text/javascript"> 
+
+						for(var d=2017;d<=2030;d++)
+						{
+    						document.write("<option>"+d+"</option>");
+						}
+					</script>
+				</select>
+				
+			</td>
+			<td>
+				<br><br><br>
+			</td>
+		</tr>
+
+			<tr>
+			<td>
+				<label class="label">E_mail</label>
+			</td>
+			<td>
+				*<input type="text" name="email" id="email" onkeydown="keydown(event)">
+			</td>
+			<td>
+				 <br><br><br
+			</td>
+			<td>
+				<label class="label1">Cvc</label>
+			</td>
+			<td>
+				<input onkeypress='return event.charCode >= 48 && event.charCode <= 57' type="text" name="kkcvv" id="kkcvv" onkeydown="keydown(event)">
+			</td>
+			<td>
+				<br><br><br>
+			</td>
+		</tr>
+
+			<tr>
+			<td>
+				<label class="label" >Kullanıcı Adı</label>
+			</td>
+			<td>
+				*<input type="text" name="kAdi" id="kAdi" onkeydown="keydown(event)">
+			</td>
+			<td>
+				 <br><br><br>
+			</td>
+			<td>
+				 <input class="butKaydet" type="submit" id="butKaydet" name="" value="Kaydet" onkeydown="keydown(event)" >
+			</td>
+		</tr>
+		<tr>
+			<td> 
+				<label class="label" >Üyelik Süresi</label>
+			</td>
+			<td>
+				
+				<select id="yil"  name="uyeSure">
+					<option>3 AY</option>
+					<option>6 AY</option>
+					<option>1 YIL</option>
+				</select>
+			</td>
+			<td>
+				 <br><br><br>
+			</td>
+		</tr>
+
+			<tr>	
+				<td>
+					<label class="label" >Cinsiyet</label>
+				</td>
+				<td> <input type="radio" name="gender" value="Erkek" checked> Erkek
+				<input type="radio" name="gender" value="Kadın"> Kadın</td>
+				<td>
+				 <br><br><br>
+			</td>
+
+			</tr>
+
+			<tr>
+			<td>
+				<label class="label" >Şifre</label>
+			</td>
+			<td>
+				*<input type="password" name="sifre1" id="sifre1" onkeydown="keydown(event)">
+			</td>
+			<td>
+				 <br><br><br>
+			</td>
+		</tr>
+				<tr>
+			<td>
+				<label class="label" >Şifre Tekrar</label>
+			</td>
+			<td>
+				*<input type="password" name="sifre2" id="sifre2" onkeydown="keydown(event)">
+			</td>
+			<td>
+				 <br><br><br>
+			</td>
+		</tr>
+	</table>
+
+	</form>
+
+	<input class="butKontrol" type="button" name="" value="Kontrol Et" id="butKontrol">
+
+	
+	
+
+
+</div>
+<div align="center" class="footer">
+	<br>
+	<font size="3">@ARS</font>
+	<br>
+</div>
+
+</body>
+</html>
