@@ -1,0 +1,53 @@
+*
+{
+    background-color: white;
+}
+.giris
+{
+  background-color:#d7e851;
+    border: none;
+    color: black;
+    padding: 20px 46px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+.kapsam
+{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+.uyeform
+{
+   margin-top: 7%;
+}
+.uyesub
+{
+    margin-left: 25%;
+    margin-top: 2%;
+}
+.tercih
+{
+    width: 260px;
+    border-width: 0px;
+    border-style: solid; 
+    color: black;
+
+}
+.uye
+{
+    font-size: 20px;
+    color: gray;
+
+
+}
+.yonetici
+{
+    font-size: 20px;
+    color: gray;
+
+}

@@ -1,0 +1,87 @@
+input[type=button] 
+{
+    background-color: #FF9933;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+input[type=submit] 
+{
+    background-color: #FF9933;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+input[type=text] 
+{
+    border: 2px solid #6a9572;
+    border-radius: 4px;
+}
+textarea {
+  
+ border: 2px solid #6a9572;
+}
+
+input[type=password] 
+{
+    border: 2px solid #6a9572;
+    border-radius: 4px;
+}
+.label
+{
+	font-size: 15px;
+	font-weight:bold;
+}
+.label1
+{
+    font-size: 15px;
+    font-weight:bold;
+}
+.button
+{
+	margin-left: 150px;
+}
+.table1
+{
+	margin-left: 19%;
+	margin-top: 5%;
+}
+.baslik
+{
+	margin-left: 19%;
+    margin-top: 8%;
+    color: #d92e2e;
+}
+
+.butKontrol
+{
+	margin-left: 43%;
+	margin-top: 3%;
+}
+
+.baslik2
+{
+   margin-left: 52%;
+   margin-top: -3.7%;
+}
+.butKaydet
+{
+	
+	margin-left: 174%;
+}
+.iltesimSub
+{
+    margin-left: 51.3%;
+    margin-top: 2%;
+}
